@@ -1,0 +1,8 @@
+.dashboard-con{
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+}

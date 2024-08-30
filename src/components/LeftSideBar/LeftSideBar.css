@@ -1,0 +1,27 @@
+.left-sidebar{
+    height: 100%;
+    width: 20%;
+    padding: 15px;
+    list-style-type: none;
+    overflow-y: scroll;
+}
+.left-sidebar li{
+    padding: 10px;
+    text-decoration: none;
+}
+.left-sidebar a{
+    text-decoration: none;
+}
+.left-sidebar li:hover{
+    background-color: aliceblue;
+}
+.selected{
+    background-color: rgb(240, 230, 240);
+    color: rgb(162, 104, 216);
+}
+.dropdown-menu{
+    list-style-type: none;
+}
+.dropdown-menu li:hover{
+    background-color: bisque;
+}

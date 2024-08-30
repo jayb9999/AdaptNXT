@@ -1,0 +1,9 @@
+.chrt{
+    background-color: white;
+    padding: 10px;
+    flex: 2;
+    overflow: auto;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+}

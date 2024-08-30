@@ -1,0 +1,12 @@
+.header{
+    background-color: rgb(253, 253, 245);
+    border-radius: 4px;
+    color: rgb(162, 104, 216);
+    margin: 0 10px;
+    flex-shrink: 0;
+}
+.header p{
+    background-color: aliceblue;
+    padding: 10px;
+    display: inline-block;
+}
