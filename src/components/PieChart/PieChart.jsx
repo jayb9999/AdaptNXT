@@ -14,7 +14,7 @@ const PieChart = () => {
       {
         label: 'Portion of Sales',
         data: [55.8, 44.2],
-        backgroundColor: ['#FF6384', '#36A2EB'], // pink and teal colors
+        backgroundColor: ['#FF6384', '#36A2EB'],
         hoverBackgroundColor: ['#FF6384', '#36A2EB'],
       },
     ],
@@ -70,7 +70,6 @@ const PieChart = () => {
     },
   };
 
-  // Custom Plugin to display the text in the center
   const centerTextPlugin = {
     id: 'centerText',
     afterDraw(chart) {
@@ -86,20 +85,18 @@ const PieChart = () => {
       const text = 'Total Sales';
       const value = `${totalSales}`;
 
-      // Calculate the positions for both text and value
+      // position calculate for both text and value
       const textX = Math.round((width - ctx.measureText(text).width) / 2);
       const valueX = Math.round((width - ctx.measureText(value).width) / 2);
       const textY = height / 2 - fontSize / 2;
       const valueY = height / 2 + fontSize;
 
-      // Draw 'Total Sales' text in one color
       ctx.font = `${fontSize}px Arial`;
-      ctx.fillStyle = '#808080'; // Red color for the text
+      ctx.fillStyle = '#808080'; 
       ctx.fillText(text, textX, textY);
 
-      // Draw total sales value in another color
       ctx.font = `${fontWeightv} ${fontSizev}px Arial`;
-      ctx.fillStyle = '#000000'; // Blue color for the value
+      ctx.fillStyle = '#000000';
       ctx.fillText(value, valueX, valueY);
 
       ctx.save();

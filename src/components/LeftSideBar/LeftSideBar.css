@@ -1,9 +1,10 @@
 .left-sidebar{
     height: 100%;
-    width: 20%;
+    width: auto;
     padding: 15px;
     list-style-type: none;
     overflow-y: scroll;
+    transition: transform 0.3s ease-in-out;
 }
 .left-sidebar li{
     padding: 10px;
@@ -24,4 +25,32 @@
 }
 .dropdown-menu li:hover{
     background-color: bisque;
+} 
+.menu-icon {
+    display: none;
+}  
+
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        font-size: 22px;
+        cursor: pointer;
+        margin-left: 0px;
+        padding: 2px;
+    }
+
+    .left-sidebar {
+        width: 25px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #fff;
+        transform: translateX(-100%);
+    }
+
+    .left-sidebar.open {
+        transform: translateX(0);
+    }
 }

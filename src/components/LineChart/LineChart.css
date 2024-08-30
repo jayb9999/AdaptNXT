@@ -1,9 +1,16 @@
 .chrt{
     background-color: white;
     padding: 10px;
-    flex: 2;
     overflow: auto;
+    flex: 8;
     border-radius: 8px;
     display: grid;
     place-items: center;
+}
+
+@media only screen and (max-width: 768px){
+    .chrt{
+        flex: none;
+        width: fit-content;
+    }
 }

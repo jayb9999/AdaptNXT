@@ -21,7 +21,7 @@ const LineChart = () => {
         yAxisID: 'salesAxis',
         tension: 0.4,
         fill: true,
-        borderWidth: 0.5, // Decrease the thickness of the sales line
+        borderWidth: 0.5,
       },
       {
         label: 'Orders',
@@ -31,7 +31,7 @@ const LineChart = () => {
         yAxisID: 'ordersAxis',
         tension: 0.4,
         fill: true,
-        borderWidth: 0.5, // Decrease the thickness of the orders line
+        borderWidth: 0.5,
       },
     ],
   };
@@ -52,7 +52,7 @@ const LineChart = () => {
         max: 1.6,
         ticks: {
           callback: (value) => `${value}k`,
-          stepSize: 0.4, // Set step size for salesAxis
+          stepSize: 0.4,
         },
       },
       ordersAxis: {
@@ -62,7 +62,7 @@ const LineChart = () => {
         min: 0,
         max: 4,
         ticks: {
-          stepSize: 1, // Set step size for ordersAxis
+          stepSize: 1,
         },
       },
     },
