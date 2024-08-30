@@ -41,7 +41,11 @@
     }
 
     .left-sidebar {
+<<<<<<< HEAD
         width: 33%;
+=======
+        width: 30%;
+>>>>>>> origin/main
         position: fixed;
         top: 0;
         left: 0;
